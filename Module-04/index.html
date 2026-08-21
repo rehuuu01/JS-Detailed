@@ -17,9 +17,14 @@
     result =  sum(10,30); // function call
     console.log(result);
 
-    function eligibilityCheck(){
-      
+    function eligibilityCheck(age){
+      if(age >= 18){
+        res = 'You are eligible';
+      }else res = 'You are not eligible';
+      return res;
     }
+    eligibilityCheck(45); /* arguments('the values passed in fun call')
+    console.log(res);*/
   </script>
 </body>
 </html>
