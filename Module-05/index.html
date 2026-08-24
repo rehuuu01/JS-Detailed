@@ -11,7 +11,7 @@
     let product = {
       company: 'Mango',
       price: 861,
-      item_name: 'T-shirt',
+      'item-name': 'T-shirt',
     };
     console.log(product);
     console.log(typeof(product));
@@ -20,7 +20,21 @@
 
     // to change the values in it
     product.company = "Kiwi";
-     console.log(product.company);
+    console.log(product.company);
+
+    // Bracket Notation
+    console.log(product['company']);
+
+    // useful when accessed using vairables
+    let numPrice = 'item-name';
+    console.log(product[numPrice]);
+
+    // objects can be deleted using 'delete' keyword
+    delete product.company;
+    console.log(product);
+
+
+
 
 
   </Script>
