@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-  <title>Obejcts</title>
+  
+  <title>Inside Objects</title>
 </head>
 <body>
 
 
-  <Script>
+  <script>
     let product = {
       company: 'Mango',
       price: 861,
       'item-name': 'T-shirt',
+      displayPrice: function(){
+        console.log(`Price of the Product is ₹${this.price}`)
+      }
     };
-    console.log(product);
-    console.log(typeof(product));
-    console.log(product.company);
-    console.log(product.price);
-
-    // to change the values in it
-    product.company = "Kiwi";
-    console.log(product.company);
-
-    // Bracket Notation
-    console.log(product['company']);
-
-    // useful when accessed using vairables
-    let numPrice = 'item-name';
-    console.log(product[numPrice]);
-
-    // objects can be deleted using 'delete' keyword
-    delete product.company;
-    console.log(product);
+    product.displayPrice();
+    // function inside  object is 'Method'
 
 
 
-
-
-  </Script>
+  </script>
 </body>
 </html>
