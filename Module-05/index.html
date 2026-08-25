@@ -2,23 +2,17 @@
 <html lang="en">
 <head>
   
-  <title>Inside Objects</title>
+  <title>Autoboxing</title>
 </head>
 <body>
 
-
   <script>
-    let product = {
-      company: 'Mango',
-      price: 861,
-      'item-name': 'T-shirt',
-      displayPrice: function(){
-        console.log(`Price of the Product is ₹${this.price}`)
-      }
-    };
-    product.displayPrice();
-    // function inside  object is 'Method'
+    // automatic conversion of primitives to objects
+    console.log('The sun shines brightly in the sky.'.toUpperCase());
 
+    console.log('The sun shines brightly in the sky.'.length);
+
+    console.log('The sun shines brightly in the sky.'.replace('sky','city'));
 
 
   </script>
