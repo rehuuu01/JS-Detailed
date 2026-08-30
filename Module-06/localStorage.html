@@ -21,7 +21,18 @@
 
     console.log(localStorage.getItem('Name'));
 
-    localStorage.setItem('product', product);
+    localStorage.setItem('product', JSON.stringify(product));
+    console.log(localStorage.getItem('product'));
+
+    let product2 = JSON.parse(localStorage.getItem('product'));
+    console.log(product2);
+
+    //to remove items
+    localStorage.removeItem('price');
+    
+    //to  clear everthing
+    //localStorage.clear();
+
   </script>
 </body>
 </html>
