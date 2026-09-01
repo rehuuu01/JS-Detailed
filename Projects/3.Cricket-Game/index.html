@@ -31,6 +31,7 @@
     <img src="images/stump.png" alt="Stump Image" class="choice-image">
   </button>
 
+  <!--to display the user's move, computer's move, result, and score-->
   <h3 id="user-move"></h3>
   <h3 id="computer-move"></h3>
   <h3 id="result"></h3>
@@ -110,7 +111,7 @@
 
     function showResult(userMove, computerMove, result) {
       localStorage.setItem('Score', JSON.stringify(score));
-      
+      //display the result on the screen
       document.querySelector('#user-move').innerText = 
         userMove ? `You have chosen ${userMove}` : '';
       
