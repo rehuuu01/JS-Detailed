@@ -30,7 +30,9 @@
   ">
     <img src="images/stump.png" alt="Stump Image" class="choice-image">
   </button>
-
+<img src="images/won.png" alt="Won Image" class="choice-score">
+<img src="images/lost.png" alt="Lost Image" class="choice-score">
+<img src="images/tie.png" alt="Tie Image" class="choice-score">
   <!--to display the user's move, computer's move, result, and score-->
   <h3 id="user-move"></h3>
   <h3 id="computer-move"></h3>
@@ -52,6 +54,7 @@
         lost: 0,
         tie: 0,
       };
+      
 
       score.displayScore = function() {
         return `Score:Won:${score.win}, Lost:${score.lost}, Tie: ${score.tie}`;

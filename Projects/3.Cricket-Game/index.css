@@ -16,3 +16,8 @@ body{
   height: 80%;
   width: 70%;
 }
+.choice-score{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
