@@ -29,14 +29,12 @@
 
   <script>
     let clickedCount = localStorage.getItem('clickedCount') || 0;
-    
     function buttonPressed(){
       console.log('Button pressed');
       clickedCount++;
       localStorage.setItem('clickedCount', clickedCount);
       updateButton();
     }
-
     function updateButton(){
       let button = document.querySelector('#my-button');
       if (clickedCount % 2 === 0){
@@ -49,18 +47,6 @@
       button.innerText = clickedCount;
     }
     updateButton();
-
-
-
-
-
-
-
-
-
-
-
-
     function greeting(personName){
       let date = new Date();
       let hour = date.getHours();
