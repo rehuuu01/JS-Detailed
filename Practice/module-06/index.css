@@ -1,0 +1,16 @@
+ body{
+  text-align: center;
+ }
+#my-button{
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border:none;
+  border-radius: 5px;
+  }
+.js-odd{
+  background-color: red;
+  }
+.js-even{
+  background-color: green;
+  }
