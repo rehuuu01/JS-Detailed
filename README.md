@@ -30,3 +30,8 @@ JS-Detailed/
 ├── scripts/
 ├── styles/
 └── README.md
+
+Technologies Used
+- HTML
+- CSS
+- JavaScript
