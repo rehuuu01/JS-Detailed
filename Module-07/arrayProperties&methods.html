@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Array Properties and Methods</title>
+</head>
+<body>
+  
+  <script>
+    let num = [1, 2, 3, 4, 5,6,7,8,9,10];
+    console.log(num);
+    let number = 99;
+    //isArray() method is used to check whether the given variable is an array or not
+    console.log(Array.isArray(num)); // outputs true
+    console.log(Array.isArray(number)); // outputs false
+
+    console.log(num.length); // outputs 10
+
+    let digits = [1, 2, 3, 4, 5];
+    console.log(digits);
+    digits.push(6); // adds 6 at the end of the array
+    console.log(digits);
+    let popped = digits.pop(); // removes the last element from the array
+    console.log(digits);
+    console.log(popped);
+
+    //shift() method removes the first element from the array
+    let array = [1, 2, 3, 4, 5];
+    console.log(array);
+    array.shift();
+    console.log(array); 
+    //unshift() method adds an element at the beginning of the array
+    array.unshift(10);
+    console.log(array);
+
+    //splice() method is used to add or remove elements from the array
+    let arr = [1, 2, 3, 4, 5];
+    console.log(arr);
+    arr.splice(1,2);
+    console.log(arr); // outputs [1, 4, 5]
+
+    //toString() method is used to convert an array to a string
+    let arr1 = [1, 2, 3, 4, 5];
+    console.log(arr1.toString()); // outputs "1,2,3,4,5"
+
+    //sort() method is used to sort the elements of an array in ascending order
+    let arr2 = [5, 3, 8, 1, 4];
+    console.log(arr2); 
+    arr2.sort();
+    console.log(arr2); 
+    arr2.reverse(); // reverses the order of the elements in the array
+    console.log(arr2);
+
+    //valueOf() method is used to return the primitive value of an array
+    let arr3 = [1, 2, 3, 4, 5];
+    console.log(arr3.valueOf()); // outputs [1, 2, 3, 4, 5]
+
+    //de-structuring assignment is a special syntax that allows us to "unpack" arrays or objects into a bunch of variables, as sometimes that is more convenient.
+    let arr4 = [1, 2, 3, 4, 5];
+    let [a, b, c, d, e] = arr4;
+    console.log(a); // outputs 1
+    console.log(e); // outputs 5
+  </script>
+</body>
+</html>
