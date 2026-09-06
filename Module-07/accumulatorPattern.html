@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Accumulator Pattern</title>
+</head>
+<body>
+  
+  <script>
+    //Accumulator pattern is a common programming pattern that involves using a variable to accumulate or collect values over time. 
+    //This pattern is often used in loops to calculate sums, products, or other aggregate values.
+
+    let sum = 0; // initialization
+    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    console.log(nums); // outputs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    for (let i = 0; i < nums.length; i++) { // condition
+      sum += nums[i]; // increment-Updating
+    }
+    console.log(`sum of array: ${sum}`);//outputs 55
+    
+    //helps to create a modified version of the array
+    let modifiedArray = [];
+    for (let i = 0; i < nums.length; i++) { // condition
+      modifiedArray.push(nums[i] * nums[i]);  // increment-Updating
+    }
+    console.log(`modified array: ${modifiedArray}`);//outputs [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+  </script>
+</body>
+</html>
