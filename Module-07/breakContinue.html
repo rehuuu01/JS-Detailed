@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Break and Continue</title>
+</head>
+<body>
+  
+  <script>
+    //break statement is used to exit the loop when a specified condition is met
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    for (let i = 1; i <= num.length; i++) {
+      if (i === 5) {
+        console.log(`Breaking the loop at i = ${i}`);
+        break; // exit the loop when i is equal to 5
+      }
+    }
+    //continue statement is used to skip the current iteration of the loop and continue with the next iteration
+    for (let i = 1; i <= num.length; i++) {
+      if (i === 5) {
+        continue; // skip the iteration when i is equal to 5
+      }
+      console.log(`Continuing the loop at i = ${i}`);
+    }
+  </script>
+</body>
+</html>
