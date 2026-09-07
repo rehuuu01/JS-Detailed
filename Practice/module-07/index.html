@@ -12,6 +12,24 @@
     array.unshift(4);
     array.push(7);
     console.log(array);
+
+    function position(nums,pos){
+      return nums[pos - 1];
+        }
+    let arr = [1,2,3,4,5];
+    console.log(position(arr, 2));
+    console.log(position(arr, 4));
+
+    function arrCopy(arr1){
+      return arr1.slice(0,arr1.length);
+
+    }
+
+    let arr1 = [1,2,3,4,5];
+    let copiedArr = arrCopy(arr1);
+    copiedArr[0] = 10;
+    console.log(arr1);
+    console.log(copiedArr);
   </script>
 </body>
 </html>
