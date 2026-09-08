@@ -1,12 +1,8 @@
 # JavaScript Detailed
 
-This repository contains my JavaScript learning journey in a structured and detailed format.
+A structured repository for learning and practicing JavaScript concepts module by module.
 
-## About
-
-The repository is organized into multiple modules and practice sections to keep the learning process structured and sequential.
-
-## Repository Structure
+## 📂 Project Structure
 
 ```text
 JS-Detailed/
@@ -17,6 +13,7 @@ JS-Detailed/
 ├── Module-04/
 ├── Module-05/
 ├── Module-06/
+├── Module-07/
 │
 ├── Practice/
 │   ├── module-01/
@@ -24,14 +21,15 @@ JS-Detailed/
 │   ├── module-03/
 │   ├── module-04/
 │   ├── module-05/
-│   └── module-06/
+│   ├── module-06/
+│   └── module-07/
 │
 ├── projects/
+│   ├── 1.Calculator/
+│   ├── 2.ToDoList/
+│   └── 3.Cricket-Game/
+│
 ├── scripts/
 ├── styles/
+│
 └── README.md
-
-Technologies Used
-- HTML
-- CSS
-- JavaScript
