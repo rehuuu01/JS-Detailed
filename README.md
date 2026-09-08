@@ -38,3 +38,4 @@ JS-Detailed/
 - HTML5
 - CSS3
 - JavaScript
+
