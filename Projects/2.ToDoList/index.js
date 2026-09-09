@@ -1,5 +1,5 @@
 let todoList = [];
-displayToDoList();
+displayItems();
 
 
 function addToDo(){
@@ -8,13 +8,24 @@ function addToDo(){
   todoList.push(todoItem);
   inputElement.value = '';
 
-  displayToDoList();
+  displayItems();
 }
 
-function displayToDoList(){
-  let displayElement = document.querySelector('#todo-items');
-  displayElement.innerText = '';
+function displayItems(){
+  let containerElement = document.querySelector('.todo-container');
+  let newHtml = '';
+
+
+
+  containerElement.innerText = '';
   for (let i = 0; i < todoList.length; i++){
-    displayElement.innerText = displayElement.innerText + todoList[i] + "\n";
+    newHtml += `
+    <div>
+    <span>${todoList[i]}</span>
+    <button onclick="todoList.splice(${i},1)
+    displayItems()">Delete</button>
+    </div>
+    `;
   }
+  containerElement.innerHTML = newHtml;
 }
