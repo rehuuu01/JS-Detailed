@@ -1,11 +1,5 @@
-let todoList = [{
-  item: 'Buy Milk',
-  dueDate: '2024-06-10'
-},
-{
-  item: 'Buy Eggs',
-  dueDate: '2024-06-11'
-},
+let todoList = [
+
 ];
 displayItems();
 
@@ -35,8 +29,7 @@ function displayItems(){
   
     <span>${item}</span>
     <span>${dueDate}</span>
-    <button onclick="todoList.splice(${i},1)
-    displayItems()">Delete</button>
+    <button class="btn-delete" onclick="todoList.splice(${i},1); displayItems()">Delete</button>
     
     `;
   }
