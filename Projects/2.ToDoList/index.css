@@ -18,6 +18,7 @@ body{
 #todo-input,  #todo-date{
   font-size: 15px;
   padding: 10px 5px;
+  background-color:dimgray;
 }
 .btn-todo{
   background-color: #4CAF50;
