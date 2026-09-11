@@ -17,6 +17,7 @@ function addToDo(){
 }
 
 function displayItems(){
+  localStorage.setItem('todoList', JSON.stringify(todoList));
   let containerElement = document.querySelector('.todo-container');
   let newHtml = '';
 
