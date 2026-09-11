@@ -2,6 +2,11 @@ let storage = localStorage.getItem('todolist');
 let todoList = [
 
 ];
+function resetItems(){
+  todoList = storage ? JSON.parse(storage):{
+  
+  }
+}
 displayItems();
 
 
@@ -18,7 +23,7 @@ function addToDo(){
 }
 
 function displayItems(){
-  localStorage.setItem('todoList', JSON.stringify(todoList));
+  localStorage.setItem('todoList', JSON.stringify(todoList ));
   let containerElement = document.querySelector('.todo-container');
   let newHtml = '';
 
