@@ -1,3 +1,4 @@
+let storage = localStorage.getItem('todolist');
 let todoList = [
 
 ];
