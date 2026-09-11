@@ -1,12 +1,6 @@
-let storage = localStorage.getItem('todolist');
-let todoList = [
+let storage = localStorage.getItem('todoList');
+let todoList = storage ? JSON.parse(storage):[];
 
-];
-function resetItems(){
-  todoList = storage ? JSON.parse(storage):{
-  
-  }
-}
 displayItems();
 
 
@@ -29,7 +23,7 @@ function displayItems(){
 
 
 
-  containerElement.innerText = '';
+  
   for (let i = 0; i < todoList.length; i++){
     let {item, dueDate} = todoList[i];
     newHtml += `
