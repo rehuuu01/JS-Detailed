@@ -39,3 +39,15 @@ JS-Detailed/
 - CSS3
 - JavaScript
 
+🚀 Projects
+1. Calculator
+
+A basic calculator application built using HTML, CSS, and JavaScript.
+
+2. ToDo List
+
+A task management application that allows users to manage their daily tasks.
+
+3. Cricket Game
+
+An interactive cricket game built using JavaScript.
