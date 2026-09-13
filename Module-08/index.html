@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
 
-  <title>Document</title>
+  <title>Anonymous function as values</title>
 </head>
 <body>
-  
+
+  <script>
+    //Anonymous function as values
+    let sum = function(num1, num2) {
+      return num1 + num2;
+    };
+    console.log(sum(10,30));
+
+    //can be passed as arguments to other functions
+    let sumOfThree = function(num1, num2, sum3, sumOfTwo){
+      let sum1 = sumOfTwo(num1, num2);
+      return sumOfTwo(sum1, sum3);
+    }
+    console.log(sumOfThree(7,5,10, sum));
+  </script>
 </body>
 </html>
