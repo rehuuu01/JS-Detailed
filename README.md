@@ -14,6 +14,7 @@ JS-Detailed/
 ├── Module-05/
 ├── Module-06/
 ├── Module-07/
+├── Module-08/
 │
 ├── Practice/
 │   ├── module-01/
