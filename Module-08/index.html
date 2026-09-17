@@ -6,7 +6,17 @@
 <body>
 
   <script>
-    
+    //setTimeout() is used when you want to run a function once after a certain amount of time
+   let alarm = function(){
+      console.log('Good morning');
+    };
+    let timerId = setTimeout(alarm, 4000);
+    console.log(`Alarm set with timerId:${timerId}`);
+    //clearTimeout(timerId);
+
+    //setInterval() is used when you want to run a function repeatedly after a fixed amount of time
+    let intervalId = setInterval(alarm,  1000);
+    setTimeout(() => clearInterval(intervalId), 5000);
   </script>
 </body>
 </html>
