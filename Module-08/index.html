@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>For each loop</title>
+  <title>Array Methods</title>
 </head>
 <body>
-  
+
   <script>
-    // forEach() runs a function once for each item in an array.
-    let array = [1,2,3,4,5];
-    array.forEach((num) => console.log(num));
-
-    function search(array, num) {
-      for ( let i = 0; i < array.length; i++){
-        if (array[i] === num){
-          console.log(`Position:${i}`);
-          return;
-        }
+    // filter() creates a new array containing only the items that meet a condition.
+    let array = [5,6,7,8,9,10];
+    let odds = array.filter((num, index) => {
+      if(num %2 === 1){
+        return true;
+      }else{
+        return false;
       }
-    }
+    });
+    console.log(odds);
 
-    search(array, 4);
+    // map() creates a new array by changing or transforming each item in the original array.
+    let arr = [1,2,3,4,5];
+    let squares = arr.map(num => num * num);
+    console.log(squares);
   </script>
 </body>
 </html>
