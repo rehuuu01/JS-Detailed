@@ -21,9 +21,12 @@
   </style>
 </head>
 <body>
-  <button class ="btn-click" onclick="setTimeout(doubleSize, 2000);">Click</button>
+  <button class ="btn-click">Click</button>
 
   <script>
+    let buttonElement = document.querySelector('.btn-click');
+    buttonElement.addEventListener('click', event =>  setTimeout(doubleSize, 2000))
+
     function doubleSize(){
       let buttonElement = document.querySelector('.btn-click');
       buttonElement.classList.add('.js-size-double');
